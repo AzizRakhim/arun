@@ -221,7 +221,7 @@ body{
 
 
 .hero-intro{
-    margin-top: 185px;
+    margin-top: 190px;
     padding-top: 40px;
 }
 
@@ -238,10 +238,13 @@ body{
     line-height: 1.5;
 }
 
+.form-entry{
+    width: 460px;
+}
+
 .form-grup{
     margin-top: 32px;
     line-height: 1.5;
-    width: 460px;
 }
 
 input[type="email"]{
@@ -249,8 +252,14 @@ input[type="email"]{
     border: 1px solid #dadce5;
     height: 48px;
     padding: 0 1rem;
-    margin-bottom: 16px;
     border-radius: 4px;
+    flex-grow: 1;
+    margin-right: 12px;
+    line-height: 1.15;
+}
+
+input[type="email"]:focus{
+    outline-color: lightblue;
 }
 
 ::placeholder{
@@ -277,7 +286,6 @@ input[type="email"]{
 
 .social{
     margin-top: 2rem;
-    line-height: 1.5;
 }
 
 .social-list{
@@ -285,7 +293,8 @@ input[type="email"]{
 }
 
 .social-text{
-    margin-right: 16px
+    margin-right: 16px;
+    line-height: 1.5;
 }
 
 .social-item{
@@ -293,19 +302,23 @@ input[type="email"]{
 }
 
 .bxl-twitter{
-    font-size: 20px;
+    font-size: 23px;
+    color: var(--text-color);
 }
 
 .bxl-facebook{
-    font-size: 20px;
+    font-size: 23px;
+    color: var(--text-color);
 }
 
 .bxl-instagram{
-    font-size: 20px;
+    font-size: 23px;
+    color: var(--text-color);
 }
 
 .bxl-github{
-    font-size: 20px;
+    font-size: 23px;
+    color: var(--text-color);
 }
 
 .arun-img{
@@ -334,7 +347,7 @@ input[type="email"]{
     top: -14%;
     left: -14%;
     width: 128%;
-    height: 128%;
+    height: 128%;#efefef;
     border-radius: 50%;
     animation: spin 400s linear infinite;
 }
@@ -362,31 +375,10 @@ input[type="email"]{
     z-index: -1;
 }
 
-.dots-2{
-    position: absolute;
-    top: -14%;
-    left: -14%;
-    width: 128%;
-    height: 128%;
-    border-radius: 50%;
-    animation: spin-2 400s linear infinite;
-    z-index: -1;
-}
-
-@keyframes spin-2{
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .dot-2{
     position: relative;
     top: 87%;
-    left: calc(50% - 33%);
+    left: calc(50% - 25%);
     background: red;
     width: 6%;
     height: 6%;
@@ -428,31 +420,10 @@ input[type="email"]{
     z-index: 100000;
 }
 
-.dots-4{
-    position: absolute;
-    top: -34%;
-    left: -34%;
-    width: 168%;
-    height: 168%;
-    border-radius: 50%;
-    z-index: -1;
-    animation: spin-4 400s linear infinite;
-}
-
-@keyframes spin-4{
-    0% {
-        transform: rotate(0);
-    }
-    
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .dot-4{
     position: relative;
     top: 70%;
-    left: calc(50% - 47%);
+    left: calc(50% - 45%);
     background: #80abff;
     width: 6%;
     height: 6%;
@@ -461,30 +432,9 @@ input[type="email"]{
     z-index: 9999;
 }
 
-.dots-5{
-    position: absolute;
-    top: -34%;
-    left: -34%;
-    width: 168%;
-    height: 168%;
-    border-radius: 50%;
-    z-index: -1;
-    animation: spin-5 400s linear infinite;
-}
-
-@keyframes spin-5{
-    0% {
-        transform: rotate(0);
-    }
-    
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .dot-5{
     position: relative;
-    top: 10%;
+    top: -2%;
     left: calc(50% - 35%);
     background: #4a47a3;
     width: 5%;
