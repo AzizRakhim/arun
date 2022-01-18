@@ -951,29 +951,94 @@ input[type="email"]:focus{
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100vw;
-    min-height: 100vh;
-    font-size: 30px;
-    background-color: #fff;
-    padding: 15px;
-    display: none;
-    transition: all 1s linear;
-    z-index: 50;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   padding-top: 200px;
+   display: none;
+  z-index: 2000;
 }
-
 .show{
     display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type='text']{
+    width: 630px;
+    height: 48px;
+    padding: 10px 16px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    margin-bottom: 10px;
+
+}
+.modal-text{
+    font-size: 12px;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    position: relative;
+    left: 250px;
+}
+.modal-inner{
+    width: 630px;
+}
+.modal-title{
+    font-weight: 600;
+    margin: 16px 0px;
+    margin-bottom: 30px;
 }
 
-.close-modal{
-    border: 1px solid #000;
-    padding: 10px;
-    border-radius: 6px;
-    background-color: red;
+.modal-list{
+    list-style: none;
+}
+
+.modal-link{
+    text-decoration: none;
+    font-size: 14;
+    font-weight: 600;
+    color: #fff;
+}
+.modal-item{
+    padding: 0px 16px;
+    margin: 6px 12px 6px 0px;
+    background-color:#0057ff;
+    border-radius: 30px;
+    height: 28px;
+    line-height: 28px;
+}
+.modal-item:nth-child(1){
+    background-color: #a7772a;
+}
+.modal-item:nth-child(5){
+    background-color: #e53095;
+}
+.modal-item:nth-child(6){
+    background-color: #bc4fe2;
+}
+.modal-item:nth-child(7){
+    background-color: #479139;
+}
+.close-btn{
     position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 5%;
+    right: 5%;
     cursor: pointer;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
 }
 
+.bx-x{
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    right: 1px;
+    color: var(--text-color);
+}

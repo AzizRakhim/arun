@@ -3,13 +3,13 @@ document.getElementById('modeBtn').addEventListener('click', function() {
 })
 
 let elOpenModalBtn = document.getElementById('searchBtn');
-let elCloseModalBtn = document.getElementById('closeModal');
-let elModalBox = document.getElementById('modalBox');
+let elModalBox= document.getElementById('modalBox');
+let elCloseBtn= document.getElementById('closeBtn');
 
-elOpenModalBtn.addEventListener('click', function() {
+elOpenModalBtn.addEventListener('click', function(){
     elModalBox.classList.add('show');
-})
-
-elCloseModalBtn.addEventListener('click', function() {
+  })
+  elCloseBtn.addEventListener('click', function(){
     elModalBox.classList.remove('show');
-})
+  })
+
