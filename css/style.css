@@ -30,7 +30,7 @@ body{
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 99999;
+    z-index: 10;
     background-color: var(--background-color);
 }
 
@@ -944,5 +944,36 @@ input[type="email"]:focus{
     text-decoration: none;
     color: var(--text-color);
     transition: all 250ms;
+}
+
+
+.modal-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-size: 30px;
+    background-color: #fff;
+    padding: 15px;
+    display: none;
+    transition: all 1s linear;
+    z-index: 50;
+}
+
+.show{
+    display: block;
+}
+
+.close-modal{
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: red;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
 }
 
