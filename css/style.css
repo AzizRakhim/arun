@@ -129,9 +129,8 @@ body{
     min-width: 165px;
     transition: all 250ms;
     border-radius: 8px;
-    opacity: 0;
-    z-index: -1;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    display: none;
 }
 
 .nav-item:nth-child(5):hover .nav-link::after{
@@ -139,9 +138,17 @@ body{
 }
 
 .nav-item:nth-child(5):hover .drop-list{
-    top: 100%;
-    opacity: 1;
-    z-index: 4;
+    display: block;
+    animation: hover-up 0.3s linear both;
+}
+
+@keyframes hover-up{
+    0% {
+        top: 150%;
+    }
+    100%{
+        top: 100%;
+    }
 }
 
 .drop-item{
